@@ -40,11 +40,20 @@
     font-family: "Helvetica Neue", sans-serif;
     font-weight: 500;
     font-size: 57px;
+    margin-top: 0;
+    color: #4b4846;
 }
 
 .font-helvetica-neue-scrollbar-text {
     font-family: "Helvetica Neue", sans-serif;
     font-weight: 500;
     font-size: 32px;
+    color: white;
 }
 
+.bottom-phone-number {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    padding-right: 20px;
+}
