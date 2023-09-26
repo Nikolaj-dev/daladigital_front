@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/fonts.css"><link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="root">
+    <div class="navbar">
+        <div>
+            <p class="dala-digital">Dala<br>Digital</p>
+        </div>
+        <div class="font-inter">
+            <a class="menu" href="#">Портфолио</a>
+            <a class="menu" href="#">Услуги</a>
+            <a class="menu" href="#">Контакты</a>
+        </div>
+        <div class="language-switcher">
+            <p class="phone-number">+7 707 997 7729</p>
+            <div class="language-border">
+                <a class="font-neue-machina" href="#">en</a>
+                <a class="font-neue-machina" href="#" style="color: #ff7602; padding-left: 15px">ru</a>
+            </div>
+        </div>
+        <div class="left-vector">
+            <img src="img_1/vector-189.svg" alt="left-vector">
+        </div>
+    </div>
+    <div class="main-text">
+        <p class="font-helvetica-neue">Студия создания цифровых<br> продуктов полного цикла</p>
+    </div>
+    <div class="sub-text">
+        <p class="font-helvetica-neue-25px">Мы делаем:</p>
+        <img src="img_1/vector-190.svg" alt="bottom-vector" style="padding-left: 15%">
+    </div>
+<!--    <div class="scroll-bar-div">-->
+
+<!--    </div>-->
+    <video class="h-video" loop muted autoplay src="media/head_video.mp4"></video>
+
+
+
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var swiper = new Swiper('.swiper-container', {
+            loop: true, // бесконечный цикл
+            autoplay: {
+                delay: 3000, // задержка между слайдами (в миллисекундах)
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar', // элемент для стилизации полосы прокрутки
+            },
+        });
+    });
+
+
+</script>
+</body>
+</html>
