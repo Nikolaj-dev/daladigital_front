@@ -132,10 +132,17 @@
 
     <div class="div4">
         <div class="div4-horizontal">
-            <img src="frames/Screenshot%202023-09-20%20at%2011.28%201.svg" alt="">
-            <img src="frames/Screenshot%202023-09-20%20at%2011.30%201.svg" alt="">
+            <div class="video-container">
+                <video id="video1" src="media/Рекламный%20пост%20для%20ЖК%20AUSTRIA.%20Базис%20А.mp4" style="max-height: 453px"></video>
+                <button class="play-button" onclick="toggleVideo('video1')"></button>
+            </div>
+            <div class="video-container">
+                <video id="video2" src="media/Рекламный%20ролик%20для%20казахстанского%20сервиса%20такси%20APARU.mp4" style="width: 805px;"></video>
+                <button class="play-button" onclick="toggleVideo('video2')"></button>
+            </div>
         </div>
     </div>
+
 
     <div class="div2" style="margin-top: 10%">
         <p class="font-helvetica-neue">Этапы разработки</p>
@@ -171,11 +178,12 @@
                 <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">UX/UI дизайн интерфейса</div>
             </div>
         </div>
-        <div class="sector" id="sector5">
-            <div class="scroll-bar-padding">
+        <div class="sector" id="sector5-6">
+            <div class="scroll-bar-padding" style="position: absolute">
                 <div class="font-helvetica-neue-scrollbar-number">05</div>
                 <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">Разработка</div>
             </div>
+            <video autoplay loop muted src="media/blurry_video.mp4" style="width: 200%; height: 100%; object-fit: cover;"></video>
         </div>
         <div class="sector" id="sector7">
             <div class="scroll-bar-padding">
@@ -219,7 +227,7 @@
         </div>
     </div>
 
-    <div class="div2" style="margin-top: 0%">
+    <div class="div2" style="margin-top: 0">
         <p class="font-helvetica-neue">Частые вопросы</p>
     </div>
 
@@ -323,6 +331,34 @@
 
 </div>
 
+<script>
+    function toggleVideo(videoId) {
+        const video = document.getElementById(videoId);
+        const playButton = video.parentElement.querySelector('.play-button');
+
+        if (video.paused) {
+            video.play();
+            playButton.style.opacity = '0.2';
+        } else {
+            video.pause();
+            playButton.style.opacity = '1';
+        }
+    }
+
+
+    // Остановка видео при клике за пределами видео
+    document.addEventListener('click', function(event) {
+        const videos = document.querySelectorAll('video');
+        videos.forEach(function(video) {
+            if (!video.contains(event.target)) {
+                video.pause();
+                const playButton = video.parentElement.querySelector('.play-button');
+                playButton.style.display = 'block'; // Показать кнопку Play
+            }
+        });
+    });
+
+</script>
 
 <script>
     const accordions = document.querySelectorAll('.accordion');
@@ -356,7 +392,7 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        var swiper = new Swiper('.swiper', {
+        let swiper = new Swiper('.swiper', {
             slidesPerView: 3.5, // Количество видимых слайдов
             spaceBetween: 0, // Расстояние между слайдами (по желанию)
             navigation: {
