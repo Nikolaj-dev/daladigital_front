@@ -4,10 +4,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dala Digital</title>
 </head>
@@ -316,75 +314,11 @@
         </div>
     </div>
 </div>
-<script>
-    function toggleVideo(videoId) {
-        const video = document.getElementById(videoId);
-        const playButton = video.parentElement.querySelector('.play-button');
 
-        if (video.paused) {
-            video.play();
-            playButton.style.opacity = '0.2';
-        } else {
-            video.pause();
-            playButton.style.opacity = '1';
-        }
-    }
+<script src="scripts/videoToggle.js"></script>
+<script src="scripts/accordion.js"></script>
+<script src="scripts/slider.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    // Остановка видео при клике за пределами видео
-    document.addEventListener('click', function(event) {
-        const videos = document.querySelectorAll('video');
-        videos.forEach(function(video) {
-            if (!video.contains(event.target)) {
-                video.pause();
-                const playButton = video.parentElement.querySelector('.play-button');
-                playButton.style.display = 'block'; // Показать кнопку Play
-            }
-        });
-    });
-
-</script>
-
-<script>
-    const accordions = document.querySelectorAll('.accordion');
-
-    accordions.forEach((accordion) => {
-        const header = accordion.querySelector('.accordion-header');
-        const content = accordion.querySelector('.accordion-content');
-        const toggleButton = accordion.querySelector('.accordion-toggle');
-        const icon = accordion.querySelector('.icon'); // Добавляем выбор иконки
-
-        toggleButton.addEventListener('click', () => {
-            if (content.classList.contains('active')) {
-                content.classList.remove('active');
-                icon.classList.remove('rotate'); // Удаляем класс "rotate" при закрытии аккордеона
-            } else {
-                content.classList.add('active');
-                icon.classList.add('rotate'); // Добавляем класс "rotate" при открытии аккордеона
-            }
-
-            // Закрываем остальные аккордеоны
-            accordions.forEach((otherAccordion) => {
-                if (otherAccordion !== accordion) {
-                    otherAccordion.querySelector('.accordion-content').classList.remove('active');
-                    otherAccordion.querySelector('.icon').classList.remove('rotate'); // Удаляем класс "rotate" у других иконок
-                }
-            });
-        });
-    });
-
-</script>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        let swiper = new Swiper('.swiper', {
-            slidesPerView: 3.5, // Количество видимых слайдов
-            spaceBetween: 0, // Расстояние между слайдами (по желанию)
-            navigation: {
-                nextEl: '.button-next',
-                prevEl: '.button-prev',
-            },
-        });
-    });
-</script>
 </body>
 </html>
