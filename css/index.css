@@ -353,3 +353,34 @@ a {
     height: 480px; /* Высота в пикселях */
     object-fit: cover; /* Заполняет контейнер, сохраняя пропорции и обрезая, если необходимо */
 }
+
+
+
+.page3-top {
+    width: 100%;
+}
+
+.page3-top-label {
+    text-align: center;
+    width: 926px;
+    height: 285px;
+    position: absolute;
+    top: 222px;
+    left: 498px;
+}
+
+.page3-top-img {
+    width: 400px;
+    height: 100px;
+    margin-left: 39%;
+    margin-top: 45%;
+    position: absolute;
+}
+
+.page3-div2 {
+    background-color: #FFED8B;
+    height: 1194px;
+    width: 100%;
+    position: absolute;
+    top: 99%;
+}
