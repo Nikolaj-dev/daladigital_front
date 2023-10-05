@@ -315,7 +315,7 @@ a {
 }
 
 
-.video-container {
+.video-container2 {
     position: relative;
     display: inline-block;
 
@@ -356,4 +356,9 @@ a {
     width: 932px; /* Ширина в пикселях */
     height: 480px; /* Высота в пикселях */
     object-fit: cover; /* Заполняет контейнер, сохраняя пропорции и обрезая, если необходимо */
+}
+
+.inline-block {
+    display: flex;
+    flex-direction: row;
 }

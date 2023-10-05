@@ -197,8 +197,18 @@ a {
     align-items: center; /* Выравниваем элементы по вертикали по центру */
 }
 
+.div3-footer {
+    display: flex; /* Размещаем элементы внутри в одну линию */
+    align-items: center; /* Выравниваем элементы по вертикали по центру */
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.div3-footer-mobile {
+    display: none;
+}
+
 .icon-border {
-    background-color: rgb(25, 25, 25);
+    background-color: transparent;
     border: 1px solid #63605e;
     padding: 15px;
     margin-left: 20px;
@@ -274,6 +284,14 @@ a {
     margin-bottom: 10%;
 }
 
+.bottom-vector-footer {
+
+}
+
+.footer-mobile {
+    display: none;
+}
+
 .bottom-links {
     display: flex;
     flex-direction: column;
@@ -290,7 +308,7 @@ a {
 }
 
 
-.video-container {
+.video-container2 {
     position: relative;
     display: inline-block;
 }
@@ -423,4 +441,198 @@ a {
     display: flex; /* Размещаем элементы внутри в одну линию */
     align-items: center; /* Выравниваем элементы по вертикали по центру */
     height: 200px;
+}
+
+.bottom-vector {
+    margin-left: 15%;
+}
+
+.header-bottom-vector {
+    padding-left: 15%;
+}
+
+.frame1 {
+    width: 1170px; height: 729px; background-size: cover;
+}
+
+.frame2 {
+    width: 753px; height: 729px; background-size: cover;
+}
+
+.frame3 {
+    width: 750px; height: 729px; background-size: cover;
+}
+
+.frame4 {
+    width: 1170px; height: 729px; background-size: cover;
+}
+
+.frame1-p {
+    font-size: 35px;
+    width: 706px;
+    height: 145px;
+    padding-top: 50%;
+    padding-left: 15%;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+}
+
+.frame2-p {
+    color: black;
+    font-weight: 550;
+    font-size: 35px;
+    width: 446px;
+    height: 135px;
+    padding-top: 8%;
+    padding-left: 15%;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.frame3-p {
+    font-size: 35px;
+    color: black;
+    width: 388px;
+    height: 90px;
+    padding-top: 80%;
+    padding-left: 10%;
+    font-weight: 550;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.frame4-p {
+    font-size: 35px;
+    width: 899px;
+    height: 110px;
+    padding-top: 50%;
+    padding-left: 10%;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+}
+
+.frame5 {
+    width: 1170px;
+    height: 729px;
+    background-size: cover;
+}
+
+.frame5-p {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    width: 714px;
+    height: 94px;
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+.frame6 {
+    width: 753px; height: 729px; background-size: cover;
+}
+
+.frame6-p {
+    font-size: 35px;
+    width: 459px;
+    height: 90px;
+    padding-top: 75%;
+    padding-left: 15%;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+}
+
+.frame7 {
+    width: 750px; height: 729px; background-size: cover;
+}
+
+.frame7-p {
+    font-size: 35px;
+    width: 580px;
+    height: 90px;
+    padding-top: 5%;
+    padding-left: 10%;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+}
+
+.frame8 {
+    width: 1170px;
+    height: 729px;
+    background-size: cover;
+}
+
+.frame8-p {
+    color: #F19100;
+    font-size: 35px;
+    width: 806px;
+    height: 94px;
+    padding-top: 5%;
+    padding-left: 10%;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+}
+
+.bottom-vector2 {
+    padding-left: 15%
+}
+
+.font-helvetica-neue-25px-flex {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+#adaptive-image7 {
+    order: 1; /* Порядок для adaptive-image7 на больших экранах */
+}
+
+#adaptive-image8 {
+    order: 2; /* Порядок для adaptive-image8 на больших экранах */
+}
+
+.motion-vector {
+    padding-left: 15%;
+}
+
+.large-scale {
+    display: inherit;
+}
+
+.small-scale {
+    display: none;
+}
+
+.left-video {
+    max-height: 453px;
+}
+
+.right-video {
+    width: 805px;
+}
+
+.only-large-visible {
+
+}
+
+.only-small-visible {
+    display: none;
+}
+
+.footer-vector {
+
+}
+
+.font-inter-flex {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.bottom-icon {
+    display: block;
+}
+
+@media (min-width: 769px) {
+    .navbar-flex {
+        display: none;
+    }
 }
